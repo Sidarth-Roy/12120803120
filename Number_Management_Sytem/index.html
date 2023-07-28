@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test number-management-service API</title>
+</head>
+<body>
+  <script>
+    fetch('http://localhost:8008/numbers?url=http://20.244.56.144/numbers/primes&url=http://abc.com/fibo')
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
+  </script>
+</body>
+</html>
